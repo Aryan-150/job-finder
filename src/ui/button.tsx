@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import { cva, VariantProps } from "class-variance-authority";
 import React, { ButtonHTMLAttributes } from "react";
 
-const buttonDefaultStyles = "";
+const buttonDefaultStyles = "cursor-pointer transition-all duration-300";
 const buttonStyles = cva(buttonDefaultStyles, {
   variants: {
     variant: {
