@@ -1,26 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  --font-montserrat: "Montserrat", sans-serif;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  --color-honey-50: #fffdeb;
+  --color-honey-100: #fef8c7;
+  --color-honey-200: #fef389;
+  --color-honey-300: #fee64b;
+  --color-honey-400: #fdd622;
+  --color-honey-500: #f7b608;
+  --color-honey-600: #db8c04;
+  --color-honey-700: #b56408;
+  --color-honey-800: #934d0d;
+  --color-honey-900: #79400e;
+  --color-honey-950: #462102;
 }
