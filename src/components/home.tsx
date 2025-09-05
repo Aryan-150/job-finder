@@ -3,9 +3,24 @@
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
+import { Loader } from "lucide-react";
 
 export default function HomePage() {
   const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, [])
+
+  if(!mounted){
+    return <div className="opacity-75 bg-honey-100/75 flex justify-center items-center w-screen h-screen">
+      <div className="w-full h-full border flex justify-center items-center">
+        Loading.....<Loader />
+      </div>
+    </div>
+  }
 
   return (
     <div className={cn(
